@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="false">
+
+    <!-- 排除 webapp 下面的 tmp 目录 -->
+    <Resources>
+        <PostResources
+                className="org.apache.catalina.webresources.DirResourceSet"
+                base="${catalina.base}/webapps/ROOT"
+                webAppMount="/admin/node_modules">
+        </PostResources>
+    </Resources>
+
+</Context>
